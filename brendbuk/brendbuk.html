@@ -1,0 +1,116 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><title>ELARIS — брендбук</title>
+<style>
+  @page { size: A4; margin: 16mm 14mm; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 10pt/1.5 'Helvetica Neue', Arial, sans-serif; color: #2B2119; background: #fff; }
+  h1 { font: 700 26pt/1.1 Georgia, 'Times New Roman', serif; margin: 0 0 2mm; letter-spacing: .01em; }
+  .sub { color: #7A6A5C; margin-bottom: 10mm; }
+  h2 { font: 700 13pt/1.2 Georgia, serif; margin: 9mm 0 3mm; padding-bottom: 1.5mm; border-bottom: .5pt solid #DED5CC; }
+  h3 { font: 700 10.5pt/1.3 Arial, sans-serif; margin: 5mm 0 2mm; }
+  p { margin: 0 0 2.5mm; }
+  .note { color: #7A6A5C; font-size: 9pt; }
+  .cvet { display: flex; flex-wrap: wrap; gap: 3mm; margin-bottom: 3mm; }
+  .k { width: 38mm; border: .5pt solid #E5DED7; border-radius: 2mm; overflow: hidden; }
+  .k .obr { height: 18mm; }
+  .k .t { padding: 2mm 2.5mm; font-size: 8.5pt; line-height: 1.35; }
+  .k b { display: block; font-size: 9pt; }
+  .k code { color: #7A6A5C; }
+  table { width: 100%; border-collapse: collapse; font-size: 9pt; }
+  td, th { text-align: left; padding: 1.8mm 2mm; border-bottom: .5pt solid #ECE5DE; vertical-align: top; }
+  th { color: #7A6A5C; font-weight: 400; }
+  .probe { background: #F8F6F0; border: .5pt solid #E5DED7; border-radius: 3mm; padding: 4mm; margin: 3mm 0; }
+  .btn { display: inline-block; background: #B04828; color: #fff; border-radius: 6mm; padding: 2.5mm 7mm; font-size: 9.5pt; }
+  .btn2 { display: inline-block; background: #fff; color: #B04828; border: .6pt solid #B04828; border-radius: 6mm; padding: 2.5mm 7mm; font-size: 9.5pt; }
+  .chip { display: inline-block; background: #505840; color: #fff; border-radius: 6mm; padding: 1.5mm 5mm; font-size: 9pt; }
+  .chip2 { display: inline-block; background: #fff; color: #2B2119; border: .5pt solid #DED5CC; border-radius: 6mm; padding: 1.5mm 5mm; font-size: 9pt; }
+  .kart { background: #fff; border: .5pt solid #E5DED7; border-radius: 4mm; padding: 4mm; }
+  ul { margin: 0 0 2.5mm; padding-left: 5mm; }
+  li { margin-bottom: 1mm; }
+</style></head><body>
+
+<h1>ELARIS</h1>
+<div class="sub">Брендбук приложения. Собран по снимкам рабочего прототипа ELARIS LIFE,
+29 сентября 2026 года. Цвета сняты с самих изображений, а не подобраны на глаз.</div>
+
+<h2>1. Палитра</h2>
+<p>Основа — тёплая, землистая: кремовый фон, терракотовый акцент, приглушённый оливковый
+для второго действия. Такая гамма читается как «уход и спокойствие», а не как аптека.</p>
+
+<div class="cvet">
+  <div class="k"><div class="obr" style="background:#B04828"></div><div class="t"><b>Терракотовый</b><code>#B04828</code><br>главное действие, логотип, активный пункт меню</div></div>
+  <div class="k"><div class="obr" style="background:#505840"></div><div class="t"><b>Оливковый</b><code>#505840</code><br>второй акцент: выбранные метки, аватар</div></div>
+  <div class="k"><div class="obr" style="background:#E8C8B8"></div><div class="t"><b>Пудровый</b><code>#E8C8B8</code><br>подложки карточек, мягкие блоки</div></div>
+  <div class="k"><div class="obr" style="background:#F8F8F0;border-bottom:.5pt solid #E5DED7"></div><div class="t"><b>Кремовый фон</b><code>#F8F8F0</code><br>фон приложения</div></div>
+  <div class="k"><div class="obr" style="background:#FFFFFF;border-bottom:.5pt solid #E5DED7"></div><div class="t"><b>Белый</b><code>#FFFFFF</code><br>карточки поверх фона</div></div>
+  <div class="k"><div class="obr" style="background:#2B2119"></div><div class="t"><b>Тёмный текст</b><code>#2B2119</code><br>заголовки и основной текст</div></div>
+  <div class="k"><div class="obr" style="background:#7A6A5C"></div><div class="t"><b>Приглушённый</b><code>#7A6A5C</code><br>подписи, пояснения</div></div>
+  <div class="k"><div class="obr" style="background:#E5DED7"></div><div class="t"><b>Линии</b><code>#E5DED7</code><br>границы карточек, разделители</div></div>
+</div>
+
+<p class="note">Проверка на читаемость: тёмный текст на кремовом даёт запас по контрасту
+с избытком. Белый текст на терракотовом проходит для кнопок и крупных надписей;
+мелкие подписи белым по терракотовому ставить не стоит.</p>
+
+<h2>2. Шрифты</h2>
+<table>
+  <tr><th style="width:28mm">Где</th><th>Что использовать</th></tr>
+  <tr><td>Заголовки</td><td>Антиква с засечками — в прототипе крупные заголовки набраны ею.
+    Подойдут Playfair Display, Lora или системная Georgia. Начертание обычное, не жирное.</td></tr>
+  <tr><td>Текст</td><td>Гротеск без засечек: Inter, Manrope или системный. Обычное начертание,
+    межстрочный интервал 1,4–1,5.</td></tr>
+  <tr><td>Надписи-метки</td><td>Тот же гротеск, прописными, размер мельче основного,
+    разрядка около 0,06 em: «МАТЕРИАЛЫ И ПРАКТИКИ», «ТЕМА МЕСЯЦА».</td></tr>
+</table>
+<p class="note">Два шрифта, не больше. Засечки — только для заголовков и названий разделов.</p>
+
+<h2>3. Логотип</h2>
+<p>Круглый знак: белая «E» на терракотовом круге. Рядом название ELARIS прописными,
+под ним мельче и с разрядкой — LIFE.</p>
+<ul>
+  <li>Минимальный размер знака — 24 px по высоте, иначе «E» заплывает.</li>
+  <li>Свободное поле вокруг — не меньше половины диаметра круга.</li>
+  <li>На тёмном фоне знак остаётся терракотовым, буква белой; перекрашивать нельзя.</li>
+</ul>
+
+<h2>4. Элементы</h2>
+<div class="probe">
+  <h3>Кнопки</h3>
+  <p><span class="btn">Продолжить</span> &nbsp; <span class="btn2">Подробнее</span></p>
+  <p class="note">Главное действие — терракотовая заливка, белый текст, скругление полное.
+  Второстепенное — контур того же цвета на белом. На экране одно главное действие, не два.</p>
+
+  <h3>Метки выбора</h3>
+  <p><span class="chip">Для меня</span> <span class="chip2">Красота</span> <span class="chip2">Здоровье</span></p>
+  <p class="note">Выбранная — оливковая заливка с белым текстом, остальные — белые с тонкой границей.</p>
+
+  <h3>Карточки</h3>
+  <div class="kart"><b>Почему лицо выглядит уставшим</b><br>
+    <span class="note">Что искать кроме недостатка сна.</span></div>
+  <p class="note">Белая подложка, скругление 16–20 px, тонкая граница вместо тени.
+  Заголовок тёмным, пояснение приглушённым.</p>
+</div>
+
+<h2>5. Нижнее меню</h2>
+<p>Пять пунктов: Материалы, AI, Главная, Клуб, Магазин. Центральная «Главная» — круглая
+терракотовая кнопка, приподнятая над полосой. Активный пункт подсвечивается терракотовым,
+остальные — приглушённым серым.</p>
+<p class="note">Порядок не меняем: человек запоминает положение пальцем, а не надписью.</p>
+
+<h2>6. Тон текстов</h2>
+<ul>
+  <li>Обращение на «вы», спокойно и коротко: «Энергия ниже обычного — выбираем мягкую нагрузку».</li>
+  <li>Без восклицаний, капса и обещаний результата.</li>
+  <li>Не ставим диагнозов: «коже не хватает увлажнения», а не «у вас обезвоженность».</li>
+  <li>Заголовок — суть, подпись — пояснение одной строкой.</li>
+</ul>
+
+<h2>7. Чего не делать</h2>
+<ul>
+  <li>Не добавлять третий акцентный цвет: палитра держится на терракотовом и оливковом.</li>
+  <li>Не использовать чистый чёрный и чистый белый как фон — только кремовый и белый карточек.</li>
+  <li>Не ставить тени: глубина задаётся границей и фоном.</li>
+  <li>Не смешивать больше двух шрифтов.</li>
+  <li>Не обещать медицинский результат ни текстом, ни оформлением.</li>
+</ul>
+
+</body></html>
